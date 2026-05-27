@@ -249,7 +249,10 @@ Attribute | Type | Length Limit |
   ],
   "BuyerCommissionType": "percent",
   "BuyerCommissionValue": "2.5",
-  "VendorModificationTimestamp": "2018-03-20T11:04:55.659-07:00"
+  "VendorModificationTimestamp": "2018-03-20T11:04:55.659-07:00",
+  "client_office_id": "abc123",
+  "alternate_office_ids": ["def456"],
+  "client_agent_id": "ghi789"
 }
 ```
 
@@ -345,6 +348,9 @@ Attribute | Type |
 |<span class="response-data">BuyerCommissionType</span>|<span class="response-data"><span class="data-type">String or null</span>
 |<span class="response-data">BuyerCommissionValue</span>|<span class="response-data"><span class="data-type">String or null</span>
 |<span class="response-data">VendorModificationTimestamp</span>|<span class="response-data"><span class="data-type">String or null</span>
+|<span class="response-data">client_office_id</span>|<span class="response-data"><span class="data-type">String or null</span>
+|<span class="response-data">alternate_office_ids</span>|<span class="response-data"><span class="data-type">Array</span>
+|<span class="response-data">client_agent_id</span>|<span class="response-data"><span class="data-type">String or null</span>
 
 
 <span class="response-data-head">LotSizeAcres</span>
@@ -593,6 +599,15 @@ Attribute | Type |
 
 <span class="response-data-head">VendorModificationTimestamp</span>
 <span class="response-data-remarks">The date when a listing was last modified by the vendor.</span>
+
+<span class="response-data-head">client_office_id</span>
+<span class="response-data-remarks">The client-specific office identifier associated with this listing.</span>
+
+<span class="response-data-head">alternate_office_ids</span>
+<span class="response-data-remarks">An alternate office identifier associated with this listing.</span>
+
+<span class="response-data-head">client_agent_id</span>
+<span class="response-data-remarks">The client-specific agent identifier associated with this listing.</span>
 
 
 ###### <span class='attribute-name'>PropertyFeature</span> Objects
